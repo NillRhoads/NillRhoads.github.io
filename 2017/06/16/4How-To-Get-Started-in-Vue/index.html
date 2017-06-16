@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://nillrhoads.github.io">
-  <title>Archives: 2017/6 | Nill Rhoads&#39;s Blog</title>
+  <title>4、How To Get Started in Vue | Nill Rhoads&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="WEB,js,jquery,vue,javascript,开源,开发者,Android,iOS,html5,Developer,Coder,Geek,c&#x2F;c++,UI设计">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Nill Rhoads&#39;s Blog">
-<meta property="og:url" content="https://nillrhoads.github.io/archives/2017/06/index.html">
+  <meta name="description" content="Vue的学习Vue.js是这几年比较火的一个js MVVM库，先来介绍下什么事MVVM，MVVM是（Model-View-ViewModel）的缩写。这个可能了解的人不多，但是大名鼎鼎的MVC，那肯定是很多IT圈内人都知道了，MVC是View可以直接访问Model的，所以View里会包含Model的信息，还会处理一些怎么显示Model的业务逻辑，MVC里Model基本不变，但是View却是依赖于M">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4、How To Get Started in Vue">
+<meta property="og:url" content="https://nillrhoads.github.io/2017/06/16/4How-To-Get-Started-in-Vue/index.html">
 <meta property="og:site_name" content="Nill Rhoads&#39;s Blog">
+<meta property="og:description" content="Vue的学习Vue.js是这几年比较火的一个js MVVM库，先来介绍下什么事MVVM，MVVM是（Model-View-ViewModel）的缩写。这个可能了解的人不多，但是大名鼎鼎的MVC，那肯定是很多IT圈内人都知道了，MVC是View可以直接访问Model的，所以View里会包含Model的信息，还会处理一些怎么显示Model的业务逻辑，MVC里Model基本不变，但是View却是依赖于M">
+<meta property="og:updated_time" content="2017-06-16T02:57:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nill Rhoads&#39;s Blog">
+<meta name="twitter:title" content="4、How To Get Started in Vue">
+<meta name="twitter:description" content="Vue的学习Vue.js是这几年比较火的一个js MVVM库，先来介绍下什么事MVVM，MVVM是（Model-View-ViewModel）的缩写。这个可能了解的人不多，但是大名鼎鼎的MVC，那肯定是很多IT圈内人都知道了，MVC是View可以直接访问Model的，所以View里会包含Model的信息，还会处理一些怎么显示Model的业务逻辑，MVC里Model基本不变，但是View却是依赖于M">
   
     <link rel="alternative" href="/atom.xml" title="Nill Rhoads&#39;s Blog" type="application/atom+xml">
   
@@ -158,36 +162,72 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-4How-To-Get-Started-in-Vue" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/16/4How-To-Get-Started-in-Vue/" class="archive-article-date">
-  	<time datetime="2017-06-16T02:33:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-16</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/16/4How-To-Get-Started-in-Vue/">4、How To Get Started in Vue</a>
+    <h1 class="article-title" itemprop="name">
+      4、How To Get Started in Vue
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/06/16/4How-To-Get-Started-in-Vue/" class="archive-article-date">
+  	<time datetime="2017-06-16T02:33:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Vue的学习"><a href="#Vue的学习" class="headerlink" title="Vue的学习"></a>Vue的学习</h1><p>Vue.js是这几年比较火的一个js MVVM库，先来介绍下什么事MVVM，MVVM是（Model-View-ViewModel）的缩写。这个可能了解的人不多，但是大名鼎鼎的MVC，那肯定是很多IT圈内人都知道了，MVC是View可以直接访问Model的，所以View里会包含Model的信息，还会处理一些怎么显示Model的业务逻辑，MVC里Model基本不变，但是View却是依赖于Model的，而且再加上在View里面实现一些控制Model数据展示的业务，如果后面有修改，很难再次更改View，至少那些控制展示的业务代码是无法再次重用的。MVVM的概念是真正的将页面和数据逻辑分离，把数据绑定的工作放到一个JS文件里去实现，这个JS文件的功能就是完成数据的绑定，然后再把数据绑定到UI的元素里面显示。MVVM还有一个特性，就是双向绑定。它也兼容MVC，其实是MVC的升级版，帮助MVC里的Controller瘦身。<br><br>再回头说Vue，它是以数据驱动和组件化的思想构建的。不像是JQuery那种手动绑定DOM，无需手动操作DOM，DOM和数据保持同步，每当数据变更的时候，DOM也会相应地更新的。</p>
+<blockquote>
+<p><strong>如何学习Vue</strong></p>
+</blockquote>
+<p>&emsp;&emsp;学习一门新的编程语言当然离不开先来一个HelloWorld了，下面来一个最简单的例子说明：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">    &lt;head&gt;</div><div class="line">        &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">        &lt;title&gt;&lt;/title&gt;</div><div class="line">    &lt;/head&gt;</div><div class="line"></div><div class="line">    &lt;body&gt;</div><div class="line">        &lt;!--这是我们的View--&gt;</div><div class="line">        &lt;div id=&quot;app&quot;&gt;</div><div class="line">            &#123;&#123; message &#125;&#125;</div><div class="line">        &lt;/div&gt;</div><div class="line">    &lt;/body&gt;</div><div class="line">    &lt;script src=&quot;js/vue.js&quot;&gt;&lt;/script&gt;</div><div class="line">    &lt;script&gt;</div><div class="line">        // 这是我们的Model</div><div class="line">        var exampleData = &#123;</div><div class="line">            message: &apos;Hello World!&apos;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        // 创建一个 Vue 实例或 &quot;ViewModel&quot;</div><div class="line">        // 它连接 View 与 Model</div><div class="line">        new Vue(&#123;</div><div class="line">            el: &apos;#app&apos;,</div><div class="line">            data: exampleData</div><div class="line">        &#125;)</div><div class="line">    &lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>1、首先定义一个View<br><br>2、然后定义出Model<br><br>3、创建一个Vue实例，用于连接View和Model，这部分就是Vue的用处所在<br></p>
+<center>&copy; NillRhoads All Rights Reserved</center>
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你的赞助<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipaypay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixinpay.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -199,95 +239,89 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://nillrhoads.github.io/2017/06/16/4How-To-Get-Started-in-Vue/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/15/2Learning-How-To-Use-MarkDown/" class="archive-article-date">
-  	<time datetime="2017-06-15T07:50:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/15/2Learning-How-To-Use-MarkDown/">2、Learning How To Use MarkDown</a>
-    </h1>
+  
+    <a href="/2017/06/15/2Learning-How-To-Use-MarkDown/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2、Learning How To Use MarkDown</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/15/3Learning-How-To-Write-HTML5/" class="archive-article-date">
-  	<time datetime="2017-06-15T07:50:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/15/3Learning-How-To-Write-HTML5/">3、Learning How To Write HTML5</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html5</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -310,8 +344,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
